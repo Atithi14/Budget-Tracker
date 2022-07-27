@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Karla&family=Merriweather+Sans&family=Merriweather:ital@0;1&family=Montserrat&family=Roboto&family=Sacramento&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+    <h1>Budget Tracker</h1>
+
+    <div class="balance-container">
+        <h2>Your Balance</h2>
+        <div id = "balance">₹1000</div>
+    </div>
+
+    <div class="cashflow-container">
+
+        <div class="income-container">
+            <h2>Income</h2>
+            <div id="income">₹1200</div>
+        </div>
+
+        <div class="expense-container">
+            <h2>Expense</h2>
+            <div id="expense">₹500</div>
+        </div>
+
+    </div>
+
+    <div class="transaction-container">
+
+        <h2>Transaction History</h2>
+        <ul class="transaction-list">
+            <!--
+            <li>
+                Salary
+                <div>
+                    <span class="income-amount">₹40000</span>
+                    <button class = "x">X</button>
+                </div>
+            </li>
+            <li>
+                Buy Shoes
+                <div>
+                    <span class="expense-amount">₹3500</span>
+                    <button class = "x">X</button>
+                </div>
+            </li>
+            <li>
+                Buy Grocery
+                <div>
+                    <span class="expense-amount">₹10000</span>
+                    <button class = "x">X</button>
+                </div>
+            </li>
+        -->
+        </ul>
+
+    </div>
+
+    <div class="form-container">
+
+        <h2>Add New Transaction</h2>
+        <form onsubmit="return false">
+            <label for = "name">Name</label>
+            <input id = "name" type="text">
+            <label for = "amount">Amount</label>
+            <input id = "amount" type="number">
+          
+            <button id = "income-button">Add Income</button>
+            <button id = "expense-button">Add Expense</button>
+            
+        </form>
+        
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
